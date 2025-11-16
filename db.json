@@ -1,0 +1,223 @@
+{
+    "users": [
+        {
+            "id": "u1",
+            "name": "Ali Hassan",
+            "email": "ali@example.com",
+            "avatarUrl": "https://example.com/avatars/ali.png",
+            "preferences": {
+                "language": "ar",
+                "timezone": "Asia/Gaza",
+                "notificationsEnabled": true
+            },
+            "createdAt": "2025-01-01T10:00:00Z",
+            "updatedAt": "2025-01-10T12:00:00Z"
+        },
+        {
+            "id": "u2",
+            "name": "Sara Ahmed",
+            "email": "sara@example.com",
+            "avatarUrl": "https://example.com/avatars/sara.png",
+            "preferences": {
+                "language": "en",
+                "timezone": "Europe/London",
+                "notificationsEnabled": true
+            },
+            "createdAt": "2025-01-02T09:00:00Z",
+            "updatedAt": "2025-01-12T11:00:00Z"
+        },
+        {
+            "id": "u3",
+            "name": "Omar Khalid",
+            "email": "omar@example.com",
+            "avatarUrl": "https://example.com/avatars/omar.png",
+            "preferences": {
+                "language": "en",
+                "timezone": "America/New_York",
+                "notificationsEnabled": false
+            },
+            "createdAt": "2025-01-03T08:00:00Z",
+            "updatedAt": "2025-01-15T14:00:00Z"
+        },
+        {
+            "id": "u4",
+            "name": "Lina Youssef",
+            "email": "lina@example.com",
+            "avatarUrl": "https://example.com/avatars/lina.png",
+            "preferences": {
+                "language": "fr",
+                "timezone": "Europe/Paris",
+                "notificationsEnabled": true
+            },
+            "createdAt": "2025-01-04T07:00:00Z",
+            "updatedAt": "2025-01-16T16:00:00Z"
+        }
+    ],
+    "categories": [
+        { "id": "c1", "name": "Health", "color": "#4CAF50", "icon": "💪" },
+        { "id": "c2", "name": "Work", "color": "#2196F3", "icon": "💼" },
+        { "id": "c3", "name": "Study", "color": "#FFC107", "icon": "📚" }
+    ],
+    "habits": [
+        {
+            "id": "h1",
+            "userId": "u1",
+            "name": "Morning Run",
+            "description": "Run 3km every morning",
+            "categoryId": "c1",
+            "goalType": "quantitative",
+            "frequency": { "type": "daily" },
+            "targetQuantity": 3,
+            "unitOfMeasure": "km",
+            "isAvoidance": false,
+            "reminderTime": "06:30",
+            "priority": "high",
+            "startDate": "2025-01-01T00:00:00Z",
+            "createdAt": "2025-01-01T00:00:00Z",
+            "updatedAt": "2025-01-10T00:00:00Z",
+            "isActive": true
+        },
+        {
+            "id": "h2",
+            "userId": "u2",
+            "name": "No Sugar",
+            "description": "Avoid eating sugar",
+            "categoryId": "c1",
+            "goalType": "boolean",
+            "frequency": { "type": "daily" },
+            "isAvoidance": true,
+            "priority": "medium",
+            "startDate": "2025-01-02T00:00:00Z",
+            "createdAt": "2025-01-02T00:00:00Z",
+            "updatedAt": "2025-01-12T00:00:00Z",
+            "isActive": true
+        },
+        {
+            "id": "h3",
+            "userId": "u3",
+            "name": "Read Books",
+            "description": "Read 20 pages",
+            "categoryId": "c3",
+            "goalType": "quantitative",
+            "frequency": { "type": "daily" },
+            "targetQuantity": 20,
+            "unitOfMeasure": "pages",
+            "isAvoidance": false,
+            "priority": "high",
+            "startDate": "2025-01-03T00:00:00Z",
+            "createdAt": "2025-01-03T00:00:00Z",
+            "updatedAt": "2025-01-15T00:00:00Z",
+            "isActive": true
+        },
+        {
+            "id": "h4",
+            "userId": "u4",
+            "name": "Meditation",
+            "description": "Meditate for 15 minutes",
+            "categoryId": "c1",
+            "goalType": "quantitative",
+            "frequency": { "type": "daily" },
+            "targetQuantity": 15,
+            "unitOfMeasure": "minutes",
+            "isAvoidance": false,
+            "priority": "low",
+            "startDate": "2025-01-04T00:00:00Z",
+            "createdAt": "2025-01-04T00:00:00Z",
+            "updatedAt": "2025-01-16T00:00:00Z",
+            "isActive": true
+        }
+    ],
+    "habitLogs": [
+        {
+            "id": "hl1",
+            "habitId": "h1",
+            "userId": "u1",
+            "date": "2025-01-15T00:00:00Z",
+            "completed": true,
+            "quantityAchieved": 3,
+            "mood": "energetic",
+            "notes": "Felt great!",
+            "createdAt": "2025-01-15T07:00:00Z"
+        },
+        {
+            "id": "hl2",
+            "habitId": "h2",
+            "userId": "u2",
+            "date": "2025-01-15T00:00:00Z",
+            "completed": true,
+            "mood": "happy",
+            "notes": "No sugar today",
+            "createdAt": "2025-01-15T21:00:00Z"
+        }
+    ],
+    "achievements": [
+        {
+            "id": "a1",
+            "name": "7-Day Streak",
+            "description": "Completed a habit for 7 days straight",
+            "criteria": "Streak >= 7",
+            "iconUrl": "https://example.com/icons/streak7.png",
+            "type": "streak"
+        }
+    ],
+    "userAchievements": [
+        {
+            "id": "ua1",
+            "userId": "u1",
+            "achievementId": "a1",
+            "dateEarned": "2025-01-07T00:00:00Z"
+        }
+    ],
+    "habitCurrency": [
+        {
+            "userId": "u1",
+            "currentBalance": 50,
+            "lastEarningDate": "2025-01-15T00:00:00Z",
+            "lifetimeEarnings": 200
+        },
+        {
+            "userId": "u2",
+            "currentBalance": 30,
+            "lastEarningDate": "2025-01-15T00:00:00Z",
+            "lifetimeEarnings": 120
+        },
+        {
+            "userId": "u3",
+            "currentBalance": 70,
+            "lastEarningDate": "2025-01-15T00:00:00Z",
+            "lifetimeEarnings": 300
+        },
+        {
+            "userId": "u4",
+            "currentBalance": 20,
+            "lastEarningDate": "2025-01-15T00:00:00Z",
+            "lifetimeEarnings": 80
+        }
+    ],
+    "challenges": [
+        {
+            "id": "ch1",
+            "name": "30-Day Fitness Challenge",
+            "description": "Complete daily exercise for 30 days",
+            "targetHabitId": "h1",
+            "creatorId": "u1",
+            "startDate": "2025-01-01T00:00:00Z",
+            "endDate": "2025-01-30T00:00:00Z",
+            "isPublic": true,
+            "maxParticipants": 100,
+            "status": "active"
+        }
+    ],
+    "challengeParticipation": [
+        {
+            "id": "cp1",
+            "challengeId": "ch1",
+            "userId": "u1",
+            "progressScore": 15,
+            "joinedAt": "2025-01-01T00:00:00Z",
+            "completed": false,
+            "rank": 1
+        },
+        { "id": "cp2", "challengeId": "ch1", "userId": "u1" }
+    ]
+}
